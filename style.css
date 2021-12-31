@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #f4f4f4;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #01645d;
+}
+
+header span{
+    color:#ff4a18;
+    padding-right: 15px;
+}
+.header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px 0 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 3px solid #35424a;
+}
+
+header a:hover{
+    border: 3px solid #0be0d2;
+    color: #ff4a18;
+}
+
+header .active a{
+    color: #ff4a18;
+}
+
+header .brand{
+    float: left;
+    margin-bottom: 20px;
+}
+.header h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+#showcase{
+    min-height: 500px;
+    background: url('./image/watch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+#showcase p{
+    color: #0be0d2;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 50%;
+    margin: auto;
+}
+
+#newsletter{
+    padding: 25px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#newsletter .container h1{
+    font-size: 30px;
+}
+#newsletter form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+form input[type = submit]{
+    font-weight: 600;
+    color: #ffffff;
+    background: #0be0d2;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#boxes .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#boxes .container .box{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 3px rgba( 0, 0, 0, 0.2);
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+.box:hover h3{
+    color: #0be0d2;
+}
+
+.box h3{
+    font-size: 25px;
+}
+.box img{
+   width: 200px;
+}
+.image{
+    width: 175px !important;
+}
+
+
+
+
+/* About page */
+#main{
+    margin-top: 30px;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+article h1, aside h1{
+    font-size: 25px;
+} 
+
+article p:last-child{
+    margin-top: 20px;
+}
+
+#main .container aside{
+    width: 60%;
+    margin: auto;
+}
+
+.container .team{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.title h1{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.team .member{
+    box-sizing: border-box;
+    padding: 22px;
+    text-align: center;
+    width: 20%;
+    box-shadow: 0px 0px 15px 3px rgba( 0, 0, 0, 0.2);
+}
+
+.team .member img{
+    width: 100px;
+    height: 100px;
+    margin-top: -80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dark{
+ padding: 15px;
+ background: #35424a;
+ color: #ffffff;
+}
+
+
+footer{
+    margin-top: 30px;
+    padding: 20px;
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+/* Service section */
+.service .container article{
+    float: left !important;
+    width: 65% !important;
+}
+.service .container aside{
+    float: right !important;
+    width: 30% !important;
+    margin-top: 20px !important;
+}
+.service .container article ul li{
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 10px;
+    background: #e6e6e6;
+}
+
+.service aside:last-child{
+    margin-top: 20px !important;
+}
+
+.service aside form input:not(input[type=submit]){
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+.service aside form div:first-child{
+    margin-top: 20px;
+}
+
+aside form textarea{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+}
+
+aside form input[type=submit]{
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    background: #ff4a18;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+/* Responsive section */
+@media(max-width:1300px){
+
+    #newsletter .container h1,
+    #newsletter .container form{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #newsletter .container form input[type = submit]{
+        width: 45.5%;
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    
+}
+
+@media(max-width:1000px){
+    #boxes .container .box{
+        width: 48%;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .team{
+        margin-bottom: 20px;
+    } 
+    .container .team .member{
+        width: 40%;
+        margin-top: 70px;
+
+    }
+
+    .service .container article{
+        float: none !important;
+        width: 100% !important;
+    }
+    .service .container aside{
+        float: none !important;
+        width: 80% !important;
+        margin: auto !important;
+        margin-top: 20px !important;
+        
+    }
+}
+
+@media(max-width:840px){
+    header .brand, header nav{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase{
+        min-height: 300px;
+    }
+    #showcase h1{
+        font-size: 2rem;
+    }
+    #showcase p{
+        margin-bottom: 100px;
+        font-size: 1rem;
+    }
+    
+    #boxes .container .box{
+        width: 80%;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    } 
+
+    article{
+        float: none;
+        width: 100%;
+    }
+
+    aside{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .container .team .member{
+        width: 60%;
+        margin-top: 80px;
+    }
+}
